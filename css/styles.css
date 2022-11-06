@@ -50,7 +50,8 @@ p {
   margin: 0;
 }
 .flex-content {
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .list .item:not(:last-child) {
@@ -70,6 +71,10 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
+}
+.logo-top {
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 93px;
 }
 .logo {
@@ -79,7 +84,7 @@ p {
   color: var(--white);
 }
 .nav {
-  outline: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
 }
 .nav-list {
   padding-top: 32px;
@@ -103,18 +108,27 @@ p {
 .hero {
   background-color: var(--bg-black);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
+  width: 696px;
   color: var(--white);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-btn {
+  border-width: 0;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
   color: var(--white);
   font-family: inherit;
   font-weight: 700;
@@ -124,6 +138,7 @@ p {
   letter-spacing: 0.06em;
   background-color: var(--blue);
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .section {
   padding-top: 94px;
@@ -132,8 +147,18 @@ p {
 .section-second {
   padding-top: 0;
 }
-.section-bottom {
-  margin-bottom: 94px;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .credo-title {
   line-height: 1.14;
@@ -158,18 +183,20 @@ p {
   line-height: 1.19;
   margin-bottom: 10px;
   text-align: center;
-  padding-top: 30px;
 }
 .tip {
   color: var(--black-title);
   font-size: 16px;
   font-weight: 500;
 }
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-job {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  padding-bottom: 30px;
 }
 .footer {
   background-color: var(--bg-black);
@@ -191,6 +218,12 @@ p {
   color: var(--blue);
 }
 .filter {
+  border-width: 0;
+  display: inline-block;
+
+  padding: 6px 22px;
+  min-width: 73px;
+
   line-height: 1.63;
   font-family: inherit;
   background-color: var(--bg-white);
@@ -204,14 +237,11 @@ p {
 }
 .filter-list {
   width: 575px;
-  margin: -4px;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-}
-
-.filter-item {
-  margin: 4px;
 }
 .flex-container {
   flex-wrap: wrap;
@@ -235,18 +265,12 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
   text-align: left;
 }
 .work-text {
   color: var(--color-text);
   font-size: 16px;
   line-height: 1.88;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 20px;
   text-align: left;
 }
 
@@ -269,6 +293,8 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 .work-border {
+  padding: 20px 24px;
   background: var(--white);
   border: 1px solid var(--color-border);
+  border-top: 0;
 }

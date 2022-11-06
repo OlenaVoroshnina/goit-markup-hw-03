@@ -21,12 +21,14 @@
   <body>
     <header class="nav">
       <div class="container main-nav">
-        <a class="nav-logo" href="/"><span class="logo">Web</span>Studio</a>
-        <ul class="list">
-          <li class="item"><a class="nav-list" href="./index.html">Студія</a></li>
-          <li class="item"><a class="nav-list current" href="">Портфоліо</a></li>
-          <li class="item"><a class="nav-list" href="">Контакти</a></li>
-        </ul>
+        <a class="nav-logo logo-top" href="/"><span class="logo">Web</span>Studio</a>
+        <nav>
+          <ul class="list">
+            <li class="item"><a class="nav-list" href="./index.html">Студія</a></li>
+            <li class="item"><a class="nav-list current" href="">Портфоліо</a></li>
+            <li class="item"><a class="nav-list" href="">Контакти</a></li>
+          </ul>
+        </nav>
         <ul class="list list-contact">
           <li class="item">
             <a class="nav-list tint" href="mailto:info@devstudio.com">info@devstudio.com" </a>
@@ -39,22 +41,20 @@
       </div>
     </header>
     <main>
-      <section class="section section-second section-bottom">
+      <section class="section">
         <div class="container">
-          <h1>Наші роботи</h1>
-          <nav>
-            <ul class="list filter-list">
-              <li class="filter-item"><button type="button" class="filter tip">Усі</button></li>
-              <li class="filter-item">
-                <button type="button" class="filter tip">Веб-сайти</button>
-              </li>
-              <li class="filter-item"><button type="button" class="filter tip">Додатки</button></li>
-              <li class="filter-item"><button type="button" class="filter tip">Дизайн</button></li>
-              <li class="filter-item">
-                <button type="button" class="filter tip">Маркетинг</button>
-              </li>
-            </ul>
-          </nav>
+          <h1 class="visually-hidden">Наші роботи</h1>
+          <ul class="list filter-list">
+            <li><button type="button" class="filter tip">Усі</button></li>
+            <li>
+              <button type="button" class="filter tip">Веб-сайти</button>
+            </li>
+            <li><button type="button" class="filter tip">Додатки</button></li>
+            <li><button type="button" class="filter tip">Дизайн</button></li>
+            <li>
+              <button type="button" class="filter tip">Маркетинг</button>
+            </li>
+          </ul>
           <ul class="list flex-container">
             <li class="flex-element">
               <a href="" class="work-list"
