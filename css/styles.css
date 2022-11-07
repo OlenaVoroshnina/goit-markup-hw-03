@@ -43,7 +43,6 @@ p {
 .flex-container {
   display: flex;
 }
-
 .list {
   list-style-type: none;
   padding: 0;
@@ -53,7 +52,6 @@ p {
   flex-wrap: wrap;
   gap: 30px;
 }
-
 .list .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -180,7 +178,6 @@ p {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .team-name {
   line-height: 1.19;
   margin-bottom: 10px;
